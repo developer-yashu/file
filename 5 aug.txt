@@ -1,0 +1,411 @@
+----------------------------------------------------------------------------------------
+1
+#include<bits/stdc++.h>
+
+using  namespace std;
+
+void d(){
+    cout<<"d is called\n";
+    cout<<"d is ended\n";
+}
+void c(){
+    cout<<"c is called\n";
+    d();
+    cout<<"c is ended\n";
+}
+void b(){
+    cout<<"b is called\n";
+    c();
+    cout<<"b is ended\n";
+}
+
+void a(){
+    cout<<"a is called\n";
+    b();
+    cout<<"a is ended\n";
+}
+int main(){
+    a();
+    return 0;
+}
+----------------------------------------------------------------------------------------
+2
+#include<bits/stdc++.h>
+
+using  namespace std;
+void j(){
+    cout<<"j is called\n";
+    cout<<"j is ended\n";
+}
+void i(){
+    cout<<"i is called\n";
+    cout<<"i is ended\n";
+}
+void d(){
+    cout<<"d is called\n";
+    i();
+    j();
+    cout<<"d is ended\n";
+}
+void h(){
+    cout<<"h is called\n";
+    cout<<"h is ended\n";
+}
+void g(){
+    cout<<"g is called\n";
+    cout<<"g is ended\n";
+}
+void c(){
+    cout<<"c is called\n";
+    g();
+    h();
+    cout<<"c is ended\n";
+}
+void f(){
+    cout<<"f is called\n";
+    cout<<"f is ended\n";
+}
+
+void e(){
+    cout<<"e is called\n";
+    cout<<"e is ended\n";
+}
+void b(){
+    cout<<"b is called\n";
+    e();
+    f();
+    cout<<"b is ended\n";
+}
+
+void a(){
+    cout<<"a is called\n";
+    b();
+    c();
+    d();
+    cout<<"a is ended\n";
+}
+int main(){
+    a();
+    return 0;
+}
+----------------------------------------------------------------------------------------
+3
+#include<bits/stdc++.h>
+
+using  namespace std;
+void i(){
+    cout<<"i is called\n";
+    cout<<"i is ended\n";
+}
+void h(){
+    cout<<"h is called\n";
+    cout<<"h is ended\n";
+}
+void g(){
+    cout<<"g is called\n";
+    cout<<"g is ended\n";
+}
+void f(){
+    cout<<"f is called\n";
+    g();
+    h();
+    i();
+    cout<<"f is ended\n";
+}
+void d(){
+    cout<<"d is called\n";
+    f();
+    cout<<"d is ended\n";
+}
+void e(){
+    cout<<"e is called\n";
+    cout<<"e is ended\n";
+}
+
+void c(){
+    cout<<"c is called\n";
+    cout<<"c is ended\n";
+}
+void b(){
+    cout<<"b is called\n";
+    c();
+    e();
+    d();
+    cout<<"b is ended\n";
+}
+
+void a(){
+    cout<<"a is called\n";
+    b();
+    cout<<"a is ended\n";
+}
+int main(){
+    a();
+    return 0;
+}
+
+----------------------------------------------------------------------------------------
+4
+#include<bits/stdc++.h>
+
+using  namespace std;
+void f(){
+    cout<<"f is called\n";
+    cout<<"f is ended\n";
+}
+void e(){
+    cout<<"e is called\n";
+    cout<<"e is ended\n";
+}
+void d(){
+    cout<<"d is called\n";
+    cout<<"d is ended\n";
+}
+
+void c(){
+    cout<<"c is called\n";
+    d();
+    e();
+    f();
+    cout<<"c is ended\n";
+}
+void b(){
+    cout<<"b is called\n";
+    c();
+    cout<<"b is ended\n";
+}
+
+void a(){
+    cout<<"a is called\n";
+    b();
+    cout<<"a is ended\n";
+}
+int main(){
+    a();
+    return 0;
+}
+
+----------------------------------------------------------------------------------------
+5
+#include<bits/stdc++.h>
+
+using  namespace std;
+void d(){
+    cout<<"d is called\n";
+    cout<<"d is ended\n";
+}
+void h(){
+    cout<<"h is called\n";
+    cout<<"h is ended\n";
+}
+void i(){
+    cout<<"i is called\n";
+    cout<<"i is ended\n";
+}
+void g(){
+    cout<<"g is called\n";
+    i();
+    cout<<"g is ended\n";
+}
+void f(){
+    cout<<"f is called\n";
+    cout<<"f is ended\n";
+}
+void e(){
+    cout<<"e is called\n";
+    f();
+    g();
+    h();
+    cout<<"e is ended\n";
+}
+void c(){
+    cout<<"c is called\n";
+    e();
+    cout<<"c is ended\n";
+}
+void b(){
+    cout<<"b is called\n";
+    cout<<"b is ended\n";
+}
+void a(){
+    cout<<"a is called\n";
+    b();
+    c();
+    d();
+    cout<<"a is ended\n";
+}
+int main(){
+    a();
+    return 0;
+}
+
+----------------------------------------------------------------------------------------
+
+7
+#include<bits/stdc++.h>
+
+using  namespace std;
+void g(){
+    cout<<"g is called\n";
+    cout<<"g is ended\n";
+}
+void f(){
+    cout<<"f is called\n";
+    cout<<"f is ended\n";
+}
+void e(){
+    cout<<"e is called\n";
+    cout<<"e is ended\n";
+}
+void d(){
+    cout<<"d is called\n";
+    e();
+    f();
+    g();
+    cout<<"d is ended\n";
+}
+void c(){
+    cout<<"c is called\n";
+    d();
+    cout<<"c is ended\n";
+}
+void b(){
+    cout<<"b is called\n";
+    c();
+    cout<<"b is ended\n";
+}
+void a(){
+    cout<<"a is called\n";
+    b();
+    cout<<"a is ended\n";
+}
+int main(){
+    a();
+    return 0;
+}
+----------------------------------------------------------------------------------------
+8
+#include<bits/stdc++.h>
+
+using  namespace std;
+void h(){
+    cout<<"h is called\n";
+    cout<<"h is ended\n";
+}
+void e(){
+    cout<<"e is called\n";
+    h();
+    cout<<"e is ended\n";
+}
+void d(){
+    cout<<"d is called\n";
+    e();
+    cout<<"d is ended\n";
+}
+void c(){
+    cout<<"c is called\n";
+    d();
+    cout<<"c is ended\n";
+}
+void g(){
+    cout<<"g is called\n";
+    h();
+    cout<<"g is ended\n";
+}
+void f(){
+    cout<<"f is called\n";
+    g();
+    cout<<"f is ended\n";
+}
+void b(){
+    cout<<"b is called\n";
+    f();
+    cout<<"b is ended\n";
+}
+void a(){
+    cout<<"a is called\n";
+    b();
+    c();
+    cout<<"a is ended\n";
+}
+int main(){
+    a();
+    return 0;
+}
+
+----------------------------------------------------------------------------------------
+9
+
+#include<bits/stdc++.h>
+
+using  namespace std;
+void d(){
+    cout<<"d is called\n";
+    cout<<"d is  ended\n";
+}
+void c(){
+    cout<<"c is called\n";
+    d();
+    cout<<"c is  ended\n";
+}
+void b(){
+    cout<<"b is called\n";
+    d();
+    cout<<"b is  ended\n";
+}
+void a(){
+    cout<<"a is called\n";
+    b();
+    c();
+    cout<<"a is ended\n";
+}
+int main(){
+    a();
+    return 0;
+}
+
+
+
+----------------------------------------------------------------------------------------
+10
+
+#include<bits/stdc++.h>
+
+using  namespace std;
+void f(){
+    cout<<"f is called\n";
+    cout<<"f is  ended\n";
+}
+
+void e(){
+    cout<<"e is called\n";
+    f();
+    cout<<"e is  ended\n";
+}
+void c(){
+    cout<<"c is called\n";
+    e();
+    cout<<"c is  ended\n";
+}
+void d(){
+    cout<<"d is called\n";
+    f();
+    cout<<"d is  ended\n";
+}
+void b(){
+    cout<<"b is called\n";
+    d();
+    cout<<"b is  ended\n";
+}
+void a(){
+    cout<<"a is called\n";
+    b();
+    c();
+    cout<<"a is ended\n";
+}
+int main(){
+    a();
+    return 0;
+}
+
+

@@ -1,0 +1,113 @@
+#include <iostream>
+using namespace std; 
+int main()
+{
+    int arr[3];
+    for(int i=0;i<3;i++)
+    {
+        cout<<"enter element"<<i+1<<":";
+        cin>>arr[i];
+    }
+    for(int i=0;i<3;i++)
+    
+    cout<<arr[i]<<endl;
+    
+    return 0;
+}
+
+------------------------------------------------------------------------------------------------------------
+2     max
+#include <iostream>
+using namespace std; 
+int main()
+{
+    int arr[]={10,20,30,40,50,60,70};
+    int max=arr[0];
+    
+    for(int i=1;i<7;i++)
+    {
+        if(max<arr[i])
+        max=arr[i];
+    }
+    
+    cout<<max<<endl;
+    
+    return 0;
+}
+
+------------------------------------------------------------------------------------------------------------
+3   	min
+#include <iostream>
+using namespace std; 
+int main()
+{
+    int arr[]={10,20,30,40,50,60,70};
+    int min=arr[0];
+    
+    for(int i=1;i<7;i++)
+    {
+        if(min>arr[i])
+        min=arr[i];
+    }
+    
+    cout<<min<<endl;
+    
+    return 0;
+}
+----------------------------------------------------------------------------------------------------------------
+4
+
+#include <iostream>
+using namespace std; 
+int main()
+{
+    int arr[]={10,20,30,40,50,60,70};
+    int element=2;
+    int result=false;
+    
+    for(int i=1;i<7;i++)
+    {
+        if(element == arr[i]){
+            result=true;
+            break;
+        }
+        
+    }
+if(result){
+    cout<<"found number";
+}
+else{
+    cout<<"not found";
+}
+    
+    return 0;
+}
+----------------------------------------------------------------------------------------------------------------
+5
+//two dimeshan array
+#include <iostream>
+using namespace std;
+int main()
+{
+   int arr[3][3];
+   
+   arr[0][0]=5;
+   arr[0][1]=6;
+   arr[0][2]=7;
+   arr[1][0]=8;
+   arr[1][1]=9;
+   arr[1][2]=10;
+   arr[2][0]=11;
+   arr[2][1]=12;
+   arr[2][2]=14;
+   for(int i=0;i<3;i++){
+       for(int j=0;j<3;j++)
+       {
+           cout<<arr[i][j]<<"  ";
+       }
+       cout<<"\n";
+   }
+    return 0;
+}
+
+

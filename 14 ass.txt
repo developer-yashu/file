@@ -1,0 +1,272 @@
+1
+Create an array of integers with a size specified by
+the user.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int size;
+
+   cout << "Enter the size of the array: ";
+    cin >> size;
+
+    int* arr = new int[size];
+
+    srand(static_cast<unsigned int>(time(0)));
+
+    for (int i = 0; i < size; ++i) {
+        arr[i] = std::rand() % 100;  
+    }
+
+    cout << "Array elements: ";
+    for (int i = 0; i < size; ++i) {
+       cout << arr[i] << " ";
+    }
+   cout << endl;
+
+    delete[] arr;
+
+    return 0;
+}
+
+---------------------------------------------------------------------------------------
+2
+Initialize the array with random integers.
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int arraysize;
+    cout<<"enter the size of array:";
+    cin>>arraysize;
+    
+    int arr[arraysize];
+    
+    for(int i=0;i<arraysize;i++)
+    {
+        cout<<"enter the element"<<i+1<<":";
+        cin>>arr[i];
+    }
+   cout<<"array :{";
+    
+    for(int i=0;i<arraysize;i++){
+        cout<<arr[i]<<" ";
+    }
+    cout<<"}";
+
+    return 0;
+}
+
+---------------------------------------------------------------------------------------
+3
+Create a 2x2 matrix and a 2x2 matrix with user-
+defined values.
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int matrix1[2][2];
+    int matrix2[2][2];
+    int result[2][2]={0};
+    
+    cout<<"enter value fpr the fist 2X2 matrix:\n";
+    for(int i=0;i<2;i++){
+        for(int j=0;j<2;j++){
+            cout<<"element["<<i<<"]["<<j<<"]: ";
+            cin>>matrix1[i][j];
+        }
+    }
+    cout<<"enter value for the second 2x2 matrix:\n";
+    for(int i=0;i<2;i++){
+        for(int j=0;j<2;j++){
+            cout<<"element["<<i<<"]["<<j<<"]:";
+            cin>>matrix2[i][j];
+        }
+    }
+    for(int i=0;i<2;i++){
+        for(int j=0;j<2;j++){
+            for(int k=0;k<2;k++){
+                result[i][j]+=matrix1[i][k]*matrix2[i][j];
+            }
+        }
+    }
+    cout<<"\n resultant 2x2 matrix after multiplication:\n";
+    for(int i=0;i<2;i++){
+        for(int j=0;j<2;j++){
+            cout<<result[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+    
+    return 0;
+}
+
+-------------------------------------------------------------------------------
+4
+
+Implement and use a function to add two
+matrices.
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int rows,cols;
+    
+    cout<<"enter the rows for the matrices:\n";
+    cin>>rows;
+    
+    cout<<"enter the cols for the matrices:\n";
+    cin>>cols;
+    
+    int matrix1[2][2],matrix2[2][2],result[2][2];
+    
+    cout<<"enter the elements of the 1 matrix:\n";
+    for(int i=0;i<rows;i++){
+    for(int j=0;j<cols;j++){
+        cin>>matrix1[i][j];
+        }
+    }
+    
+    cout<<"enter the elements of 2 matrix:\n";
+    for(int i=0;i<rows;i++){
+     for(int j=0;j<cols;j++){
+         cin>>matrix2[i][j];
+        }   
+    }
+    cout<<"result matrix addition:\n";
+    for(int i=0;i<rows;i++){
+        for(int j=0;j<cols;j++){
+            result[i][j]=matrix1[i][j]+matrix2[i][j];
+        }
+    }
+
+
+    for(int i=0;i<rows;i++){
+        for(int j=0;j<cols;j++){
+            cout<<result[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+    
+    return 0;
+}
+-------------------------------------------------------------------------------------
+5
+Implement and use a function to multiply two
+matrices.
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int rows,cols;
+    
+    cout<<"enter the rows for the matrices:\n";
+    cin>>rows;
+    
+    cout<<"enter the cols for the matrices:\n";
+    cin>>cols;
+    
+    int matrix1[2][2],matrix2[2][2],result[2][2];
+    
+    cout<<"enter the elements of the 1 matrix:\n";
+    for(int i=0;i<rows;i++){
+    for(int j=0;j<cols;j++){
+        cin>>matrix1[i][j];
+        }
+    }
+    
+    cout<<"enter the elements of 2 matrix:\n";
+    for(int i=0;i<rows;i++){
+     for(int j=0;j<cols;j++){
+         cin>>matrix2[i][j];
+        }   
+    }
+    cout<<"result matrix addition:\n";
+    for(int i=0;i<rows;i++){
+        for(int j=0;j<cols;j++){
+            result[i][j]=matrix1[i][j] * matrix2[i][j];
+        }
+    }
+
+
+    for(int i=0;i<rows;i++){
+        for(int j=0;j<cols;j++){
+            cout<<result[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+    
+    return 0;
+}
+
+-------------------------------------------------------------------------------------
+6
+Print the resulting matrices after addition and
+multiplication.
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int rows,cols;
+    
+    cout<<"enter the rows for the matrices:\n";
+    cin>>rows;
+    
+    cout<<"enter the cols for the matrices:\n";
+    cin>>cols;
+    
+    int matrix1[2][2],matrix2[2][2],result[2][2];
+    
+    cout<<"enter the elements of the 1 matrix:\n";
+    for(int i=0;i<rows;i++){
+    for(int j=0;j<cols;j++){
+        cin>>matrix1[i][j];
+        }
+    }
+    
+    cout<<"enter the elements of 2 matrix:\n";
+    for(int i=0;i<rows;i++){
+     for(int j=0;j<cols;j++){
+         cin>>matrix2[i][j];
+        }   
+    }
+    cout<<"result matrix addition:\n";
+    for(int i=0;i<rows;i++){
+        for(int j=0;j<cols;j++){
+            result[i][j]=matrix1[i][j] + matrix2[i][j];
+        }
+    }
+     for(int i=0;i<rows;i++){
+        for(int j=0;j<cols;j++){
+            cout<<result[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+    
+      cout<<"result matrix multipication:\n";
+    for(int i=0;i<rows;i++){
+        for(int j=0;j<cols;j++){
+            result[i][j]=matrix1[i][j] * matrix2[i][j];
+        }
+    }
+
+
+    for(int i=0;i<rows;i++){
+        for(int j=0;j<cols;j++){
+            cout<<result[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+    
+    return 0;
+}
+
+
+
+

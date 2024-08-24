@@ -1,0 +1,128 @@
+23 class
+------------------------------------------------------------------------
+1
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int arr[10];
+    for(int i=0;i<10;i++){
+        cin>>arr[i];
+    }
+    for(int i=0;i<10;i++){
+        cout<<arr[i]<<" ";     
+    }
+    return 0;
+}
+
+------------------------------------------------------------------------
+2 print data function
+ 
+#include <iostream>
+using namespace std;
+void printdata(int a[])
+{
+    for(int i=0;i<10;i++){
+        cout<<a[i]<<" ";
+    }
+}
+int main()
+{
+    int arr[10];
+    for(int i=0;i<10;i++){
+        cin>>arr[i];
+    }
+    printdata(arr);
+    return 0;
+} 
+
+------------------------------------------------------------------------
+3
+
+#include <iostream>
+using namespace std;
+void printdata(int a[])
+{
+    for(int i=0;i<10;i++){
+        cout<<a[i]<<" ";
+    }
+}
+int main()
+{
+    int arr[10];
+   //cout<<sizeof(arr);
+   cout<<sizeof(arr)/sizeof(arr[0]);
+   //cout<<sizeof(arr[10]);
+    return 0;
+}
+
+------------------------------------------------------------------------
+4
+
+#include <iostream>
+using namespace std;
+
+// a3=a1+a2
+// c=a+b
+// a4=a2+a3
+// d=b+c
+// a5=a3+a4
+// a6=a4+a5
+// an=a(n-2)+a(n-1)
+
+int main()
+{
+   int a=0,b=1,c;
+   cout<<" "<<b<<" ";
+   for(int i=3;i<8;i++){
+       c=a+b;
+       cout<<c<<" ";
+       a=b;
+       b=c;
+   }
+    return 0;
+}
+
+
+
+------------------------------------------------------------------------
+
+
+5
+#include <iostream>
+using namespace std;
+
+// a1=1 a2=2 a3=3
+// 1 2 3 4 6 9 13 19............
+// a4=a1+a3
+// d= a +c
+// a5=a2+a4
+// e =b +d
+// a6=a3+a5
+// f =c +e
+// a7=a4+a6
+// g= d +f
+// an=a(n-3)+a(n-1)
+
+int main()
+{
+   int a=1,b=2,c=3,d;
+   int arr[9];
+   arr[0]=a;
+   arr[1]=b;
+   arr[2]=c;
+   //cout<<" "<<b<<" ";
+   for(int i=3;i<9;i++){
+       arr[i]=arr[i-3]+arr[i-1];
+   }
+   for(int i=0;i<9;i++){
+       cout<<arr[i]<<" ";
+   }
+    return 0;
+}
+
+
+
+
+  

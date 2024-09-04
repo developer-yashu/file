@@ -1,0 +1,121 @@
+#include <iostream>
+#include<vector>
+using namespace std;
+int main()
+{   
+    vector<int>vec_array;
+    int array[5];
+    int element;
+    
+    for(int i=10;i<=14;i++)
+    {
+     cout<<"enter element";
+     cin>>element;
+     vec_array.push_back(element);
+    }
+
+    return 0;
+}
+---------------------------------------------------------------------------------------------
+#include <iostream>
+#include<vector>
+using namespace std;
+int main()
+{   
+    vector<int>vec_array;
+    int array[5];
+    int element;
+    
+    for(int i=10;i<=14;i++)
+    {
+     cout<<"enter element";
+     cin>>element;
+     vec_array.push_back(element);
+    }
+    for(int k=0;k<vec_array.size();k++){
+        cout<<vec_array[k];
+    }
+
+    return 0;
+}
+---------------------------------------------------------------------------------------------
+#include <iostream>
+#include<vector>
+using namespace std;
+int main()
+{   
+    vector<int>vec_array;
+    int array[5];
+    int element;
+    
+    for(int i=10;i<=14;i++)
+    {
+     cout<<"enter element";
+     cin>>element;
+     vec_array.push_back(element);
+    }
+    // for(int k=0;k<vec_array.size();k++){   //for loop
+    //     cout<<vec_array[k];
+    // }
+        
+        for(int k:vec_array){       //for ich
+            cout<<k<<endl;
+        } 
+    return 0;
+}
+---------------------------------------------------------------------------------------------
+sum
+
+#include <iostream>
+#include<vector>
+using namespace std;
+int main()
+{   
+    vector<int>vec_array;
+    int array[5];
+    int element;
+    int sum=0;
+    for(int i=10;i<=14;i++)
+    {
+     cout<<"enter element";
+     cin>>element;
+     vec_array.push_back(element);
+    }
+    
+        for(int k:vec_array){       //for ich
+            cout<<k<<endl;
+            sum=sum+k;
+        } 
+        cout<<sum;
+    return 0;
+}
+---------------------------------------------------------------------------------------------
+
+max value
+
+#include <iostream>
+#include<vector>
+using namespace std;
+int main()
+{   
+    vector<int>vec_array;
+    int array[5];
+    int element;
+    int max=0;
+    for(int i=10;i<=14;i++)
+    {
+     cout<<"enter element";
+     cin>>element;
+     vec_array.push_back(element);
+    }
+    
+        for(int k:vec_array){       
+            cout<<k<<endl;
+            if(max<k)
+        {
+        max=k;
+    } 
+ } cout<<"max value "<<max;
+    return 0;
+};
+---------------------------------------------------------------------------------------------

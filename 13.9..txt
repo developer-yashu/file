@@ -1,0 +1,247 @@
+ C++   INHERITANCE
+
+#include<iostream>
+using namespace std;
+class parent
+{
+	public:
+	int a=12,b=11,c;
+	
+};	 
+class child :public parent 
+{
+ 
+	 public:
+	void sum(){
+	  
+	   cout<<a+b<<endl;
+	}
+
+};
+class grandson: public child
+{
+    public:
+    void mul(){
+        cout<<"this is number "<<a*b;
+    }
+};
+int main()
+{
+   grandson obj;
+   obj.sum();
+   obj.mul();
+   return 0;
+}
+
+---------------------------------------------------------------------------------------------
+
+#include<iostream>
+using namespace std;
+class abc
+{
+	public:
+	int a=12,b=11,c;
+	
+};	 
+class o:public abc
+{
+ 
+	 public:
+	void print(){
+	  
+	   cout<<a<<b<<endl;
+	}
+
+};
+int main()
+{
+   o obj;
+   obj.print();
+   return 0;
+}
+---------------------------------------------------------------------------------------------
+
+
+#include<iostream>
+using namespace std;
+class parent
+{
+	public:
+	int a=12,b=11,c;
+	
+};	 
+class child 
+{
+	 public:
+	void sum(){
+	  
+	    cout<<"child class"<<endl;
+	}
+
+};
+class grandson: public child,public parent
+{
+    public:
+    void mul(){
+        cout<< a*b<<endl;
+        }
+    void mul2(){
+        cout<<a+b<<endl;
+        sum();
+    }
+    grandson(int k,int l){
+    a=k;
+    b=l;
+    }
+};
+int main()
+{
+   grandson obj(5,6);
+   obj.mul();
+   obj.sum();
+   obj.mul2();
+   cout<<obj.a<<endl;
+   return 0;
+}
+
+=============================================================================================
+
+class()
+
+
+
+ #include <iostream>
+using namespace std;
+class abc
+{
+    public:
+    void get()
+    {
+        int a=12,b=2;
+        cout<<a<<endl<<b;
+    }
+};
+
+int main()
+{
+    abc obj;
+    obj.get();
+    return 0;
+}
+
+
+============================================================================================
+
+
+object()
+
+
+
+#include <iostream>
+using namespace std;
+class punch
+{
+    public:
+    int id;
+    string name;
+    void insert(int i,string n)
+    {
+        id=i;
+        name=n;
+    }
+    void displaye()
+    {
+        cout<<id<<" "<<name<<endl;
+    }
+};
+int main()
+{
+   punch s1;
+   punch s2;
+   s1.insert(201,"sonoo");
+   s2.insert(202,"noon");
+   s1.displaye();
+   s2.displaye();
+
+    return 0;
+}
+
+===========================================================================================
+
+C++ Constructor
+
+#include <iostream>
+using namespace std;
+class Employee 
+{
+    public:
+     int id;
+     string name;
+     float salary;
+     
+      Employee (int i,string n,float s)
+      {
+        id=i;
+        name=n;
+        salary=s;
+      }
+      void displaye()
+      {
+          cout<<id<<" "<<name<<" "<<salary<<endl;
+      }
+};
+int main()
+{
+   Employee  s1=Employee(201,"sonoo",55665);
+    Employee  s2=Employee(202,"noon",58577);
+   s1.displaye();
+   s2.displaye();
+
+    return 0;
+}
+--------------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+class  Employee 
+{
+    public:
+     
+      Employee (){
+     cout<<"enter the  Employee name "<<endl;
+      }
+};
+
+int main()
+{
+     Employee e1;
+      Employee e2;
+    return 0;
+}
+
+=============================================================================================
+
+C++ DESTRUCTOR
+
+
+#include <iostream>
+using namespace std;
+class Employee
+{
+    public:
+     ~Employee()
+    {
+     cout<<"Constructor Invoked"<<endl;   
+    }
+     Employee()
+     {
+         cout<<"Destructor Invoked"<<endl;
+     }
+     
+};
+int main()
+{
+    Employee e1;
+    //Employee e2;
+    
+    return 0;
+}

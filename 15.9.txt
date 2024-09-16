@@ -1,0 +1,311 @@
+evenodd
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a;
+	
+	cout<<"enter the value of a: \n";
+	cin>>a;
+	if(a%2==0)
+	{
+		cout<<"even";
+	}
+	else
+	{
+		cout<<"odd";
+	}
+}
+
+================================================================================
+factorial
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int fact=1,n=5;
+	for(int i=1;i<=n;i++)
+	{
+		fact*=i;
+	}
+	cout<<"factorial of n number is: "<<fact;
+}
+
+
+
+=================================================================================
+user input factorial
+
+#include <iostream>
+using namespace std;
+void evenodd(int a)
+{
+   if(a%2==0)
+   {
+       cout<<"Even\n";
+   }
+   else
+   {
+       cout<<"Odd\n";
+   }
+}
+void factorial(int fact,int n)
+{
+ 
+   for(int i=1;i<=n;i++)
+   {
+       fact*=i;
+   }
+   cout<<"Factorial of n number is: "<<fact;
+}
+int main()
+{
+	int a,fact=1,n;
+	
+	cout<<"Enter the number"<<'\n';
+	cin>>a;
+	
+//		cout<<"Enter the factr"<<'\n';
+//	cin>>fact;
+	
+		cout<<"Enter the number"<<'\n';
+	cin>>n;
+	
+   evenodd(a);//variable paramerterised argument
+   factorial(fact,n);//non variable paramerterised argument
+}
+
+
+=================================================================================
+inheridance exp 3
+
+
+#include<iostream>
+using namespace std;
+class parent
+{
+	public:
+	int a=12,b=11,c;
+	
+};	 
+class child 
+{
+	 public:
+	void sum(){
+	  
+	    cout<<"child class"<<endl;
+	}
+
+};
+class grandson: public child,public parent
+{
+    public:
+    void mul(){
+        cout<< a*b<<endl;
+        }
+    void mul2(){
+        cout<<a+b<<endl;
+        sum();
+    }
+    grandson(int k,int l){
+    a=k;
+    b=l;
+    }
+};
+int main()
+{
+   grandson obj(5,6);
+   obj.mul();
+   obj.sum();
+   obj.mul2();
+   cout<<obj.a<<endl;
+   return 0;
+}
+
+=================================================================================
+inheridasce simple
+
+#include<iostream>
+using namespace std;
+class abc
+{
+	public:
+	int a=12,b=11,c;
+	
+};	 
+class o:public abc
+{
+ 
+	 public:
+	void print(){
+	  
+	   cout<<a<<endl<<b<<endl;
+	}
+
+};
+int main()
+{
+   o obj;
+   obj.print();
+   return 0;
+}
+
+
+=================================================================================
+
+inheridanse  multiple 
+
+#include<iostream>
+using namespace std;
+class parent
+{
+	public:
+	int a=12,b=11,c;
+	
+};	 
+class child :public parent 
+{
+ 
+	 public:
+	void sum(){
+	  
+	   cout<<a+b<<endl;
+	}
+
+};
+class grandson: public child
+{
+    public:
+    void mul(){
+        cout<<"this is number "<<a*b;
+    }
+};
+int main()
+{
+   grandson obj;
+   obj.sum();
+   obj.mul();
+   return 0;
+}
+
+=================================================================================
+
+with argument and withut return type
+
+#include<iostream>
+using namespace std;
+void evenodd(int a)
+{
+	if(a%2==0)
+	{
+		cout<<"even";
+	}
+	else
+	{
+		cout<<"odd";
+	}
+}
+void factorial(int fact,int n)
+{
+	 	
+	for(int i=1;i<n;i++)
+	{
+		fact=fact*i;
+	}
+	cout<<"value of factoria "<<fact;
+}
+int main()
+{
+	int a;
+	cout<<"enter the value of a: ";
+	cin>>a;
+	evenodd(a);
+	factorial(1,5);
+}
+
+=================================================================================
+
+with return  with arguments
+
+
+
+
+#include<iostream>
+using namespace std;
+string evenodd(int a)
+{ 
+		if(a%2==0)
+	{
+		return"even";
+	}
+	else
+	{
+		return"odd";
+	}
+};
+int factorial(int fact,int n)
+{
+	for(int i=1;i<=n;i++)
+	{
+		fact*=i;
+	}
+//	cout<<"factorial of n number is: "<<fact;
+	
+	return fact;
+}
+int main()
+{
+	int a;
+	cout<<"enter the value of a: \n";
+	cin>>a;
+//	cout<<evenodd(a)<<"\n";
+// 	cout<<factorial(1,5)<<"\n";
+	
+	string s= evenodd(a);
+ 	cout<<s<<endl;
+	int f=factorial(1,5);	
+	cout<<f;
+}
+
+
+=================================================================================
+
+without return and without argument  
+
+#include<iostream>
+using namespace std;
+void evenodd()
+{ 
+	 
+	
+	int a;
+	
+	cout<<"enter the value of a: \n";
+	cin>>a;
+	if(a%2==0)
+	{
+		cout<<"even";
+	}
+	else
+	{
+		cout<<"odd";
+	}
+};
+void factorial()
+{
+	int fact=1;
+	int n=5;
+	for(int i=1;i<n;i++)
+	{
+		fact*=i;
+	}
+	cout<<"factorial of n number is: "<<fact;
+}
+int main()
+{
+	evenodd();
+ 	factorial();
+	
+}

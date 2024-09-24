@@ -1,0 +1,173 @@
+#include <iostream>
+using namespace std;
+class add
+{
+     
+    public:
+    void mul(int a,int b)
+    {
+    
+        if(a>b)
+        {
+            cout<<a<<endl;
+        }
+        else
+        {
+            cout<<b<<endl;
+        }
+    }
+    void mul(double q,double r)
+    {
+         
+         if(q<r)
+         {
+             cout<<r;
+         }
+         else
+         {
+             cout<<q;
+         }
+    }
+};
+int main()
+{
+   add obj;
+   obj.mul(12,4);
+   obj.mul(11.4,9.6);
+    return 0;
+}
+====================================================================
+
+#include <iostream>
+using namespace std;
+class oper
+{
+    int a,b;
+    public:
+    void mul()
+    {
+        cout<<"enter the two number ";
+        cin>>a>>b;
+        cout<<a*b<<endl;
+    }
+    void mul(float p,float o)
+    { 
+       cout<<p*o<<endl;
+       
+    }
+};
+int main()
+{
+    oper obj;
+    obj.mul();
+    obj.mul(3.5f,3.9f);
+   
+    return 0;
+}
+
+
+=============================================================================
+#include <iostream>
+using namespace std;
+class mul
+{
+    int total,av; 
+    public:
+    void table(int a,int b,int c)
+    {
+        total=a+b+c;
+        av=total/3;
+        cout<<av<<endl;
+    }
+    void table(float q,float w,float e)
+    { float av,total;
+          total=q+w+e;
+          av=total/3;
+          cout<<av<<endl;
+    }
+     void table(double z,double x,double v)
+    {   
+         double av,total;
+          total=z+x+v;
+          av=total/3;
+          cout<<av<<endl;
+    }
+};
+int main()
+{
+    mul obj;
+    obj.table(1,2,3);
+    obj.table(4.5f,5.7f,6.8f);
+    obj.table(7.2,8.3,9.6);
+    return 0;
+}
+=================================================================================================================================
+#include <iostream>
+using namespace std;
+class addition
+{
+    int a;int b;
+    public:
+    addition(){
+        
+    }
+    addition(int a,int b){
+        this->a=a;
+        this->b=b;
+    }
+    void display()
+    {
+        cout<<a<<" and "<<b<<endl;
+    }
+    addition operator+(addition &p) 
+    {
+       addition objenew;
+        objenew.a=a+p.a;
+        objenew.b=b+p.b;
+        
+        return objenew;
+    }
+};
+
+int main()
+{
+    addition objenew;
+    addition obj1(2,4);
+    addition obj2(3,7);
+    addition obj3=obj2+obj1;
+    obj3.display();
+    return 0;
+}
+
+=========================================================================================
+#include <iostream>
+using namespace std;
+class apnacollage
+{
+    public:
+    void fun()
+    {
+        cout<<"i am a fist function "<<endl;
+    }
+    void fun(int x)
+    {
+        cout<<"i am function with int argument "<<x<<endl;
+         
+    }
+    void fun(double x)
+    {
+        cout<<"i am function with double argument "<<x<<endl;
+         
+        
+    }
+};
+int main()
+{
+    apnacollage obj;
+    obj.fun();
+    obj.fun();
+    obj.fun();
+
+    return 0;
+}
+

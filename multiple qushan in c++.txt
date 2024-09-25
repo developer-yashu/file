@@ -1,0 +1,725 @@
+//for loop table
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int a;
+//     cout<<"enter the number \n";
+//     cin>>a;
+//     for(int i=1;i<=10;i++)
+//     {
+//         cout<<a<<"*"<<i<<"="<<a*i<<endl;
+//       // i++;
+//     }
+// }
+-----------------------------------------------------------------------------------------
+//while table
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int a,i=1;
+//     cout<<"enter the number \n ";
+//     cin>>a;
+//     while(i<=10)
+//     {
+//         cout<<a<<"*"<<i<<"="<<a*i<<endl;
+//         i++;
+//     }
+// }
+
+-------------------------------------------------------------------------------------------------
+//do while table
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int a,i=1;
+//     cout<<"enter the number ";
+//     cin>>a;
+//     do
+//     {
+//         cout<<a<<"*"<<i<<"="<<a*i<<endl;
+//         i++;
+//     }
+//     while(i<=10);
+// };
+=======================================================================================================
+//percentage
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int a,b,c,total,per;
+    
+//     cout<<"enter the number ";
+//     cin>>a;
+    
+//     cout<<"enter the number ";
+//     cin>>b;
+    
+//     cout<<"enter the number ";
+//     cin>>c;
+    
+//     total=a+b+c;
+    
+//     per=total/3;
+//     cout<<"percentage "<<per;
+// }
+----------------------------------------------------------------------------------------------------------------
+//percentage of class type 2
+
+// #include<iostream>
+// using namespace std;
+// class percentage
+// {
+//     int a,b,c,total,per;
+//     public:
+//     void display()
+//     {
+//         cout<<"enter the number ";
+//         cin>>a;
+        
+//         cout<<"enter the number ";
+//         cin>>b;
+        
+//         cout<<"enter the number ";
+//         cin>>c;
+        
+//         total=a+b+c;
+//         per=total/3;
+//         cout<<"percentage "<<per;
+        
+//     }
+// };
+// int main()
+// {
+//     percentage obj;
+//     obj.display();
+// }
+----------------------------------------------------------------------------------------------------------------
+//pass by value type 3
+
+// #include<iostream>
+// using namespace std;
+// class percentage
+// {
+//     public:
+//     int per;
+    
+//     public:
+//     void display(int a,int b,int c,int total)
+//     {
+//         per=total/3;
+//         cout<<"percentage "<<per<<"\n";
+//     }
+// };
+// int main()
+// {
+//     percentage obj;
+//     int p,q,r,total;
+    
+//     cout<<"enter the number ";
+//     cin>>p;
+
+//     cout<<"enter the number ";
+//     cin>>q;
+        
+//     cout<<"enter the number ";
+//     cin>>r;
+    
+//     total=p+q+r;
+//     obj.display(p,q,r,total);
+// }
+
+--------------------------------------------------------------------------------------------------------------------------
+//pass by value type 4
+
+// #include<iostream>
+// using namespace std;
+
+// class Percentage {
+//     public:
+//         int x, y, z, per;
+
+//     public:
+//         void display(int a, int b, int c, int total) {
+//             x = a;
+//             y = b;
+//             z = c;
+            
+//             per = total / 3;   
+//             cout << "Percentage: " << per << "%" << endl;
+//         }
+// };
+
+// int main() {
+//     int p, q, r, total;
+    
+//     cout << "Enter the first number: ";
+//     cin >> p;
+    
+//     cout << "Enter the second number: ";
+//     cin >> q;
+    
+//     cout << "Enter the third number: ";
+//     cin >> r;
+    
+//     total = p + q + r;
+
+//     Percentage obj;
+    
+//     obj.display(p, q, r, total);
+
+//     return 0;
+// }
+
+----------------------------------------------------------------------------------------------------------------------------
+//pass value by class Percentage 5 
+
+// #include<iostream>
+// using namespace std;
+
+// class Percentage
+// {
+//     public:
+//     int x, y, z, per;
+
+//     void display(int a, int b, int c, int total)
+//     {
+//         x = a;
+//         y = b;
+//         z = c;
+//         per = (total * 100) / 300;
+//     }
+
+//     void show()
+//     {
+//         cout << "Percentage = " << per << "%" << endl;
+//     }
+// };
+
+// int main()
+// {
+//     Percentage obj;
+//     int p, q, r, total;
+
+//     cout << "Enter the first number: ";
+//     cin >> p;
+        
+//     cout << "Enter the second number: ";
+//     cin >> q;
+        
+//     cout << "Enter the third number: ";
+//     cin >> r;
+    
+//     total = p + q + r;
+    
+//     obj.display(p, q, r, total);  
+//     obj.show();
+
+//     return 0;
+// }
+==========================================================================================================================
+//add two number
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    cout<<"enter the number ";
+    cin>>a;
+    
+    cout<<"\nentert the number ";
+    cin>>b<<endl;
+    
+    c=a+b;
+    cout<<c;
+}
+--------------------------------------------------------------------------------------------------
+//add  number in class 2
+
+// #include <iostream>
+// using namespace std;
+// class add
+// {
+//     public:
+//     int a,b,c;
+//     public:
+//     void display()
+//     {
+//         cout<<"enter the two number ";
+//         cin>>a>>b;
+        
+//         c=a+b;
+        
+//         cout<<"c = "<<c;
+//     }
+// };
+// int main()
+// {
+//      add obj;
+//      obj.display();
+
+//     return 0;
+// }
+
+=====================================================================================================
+//tupe 3 pass by value
+
+// #include<iostream>
+// using namespace std;
+// class collage
+// {
+//     public:
+//     int c;
+    
+//     public:
+//     void display(int a,int b)
+//     {
+//         c=a+b;
+//         cout<<"c = "<<c<<endl;
+//     }
+// };
+// int main()
+// {
+//     collage obj;
+//     int x,y;
+    
+//     cout<<"enter the value of x ";
+//     cin>>x;
+    
+//     cout<<"enter the value of y ";
+//     cin>>y;
+    
+//     obj.display(x,y);
+// }
+----------------------------------------------------------------------------------------------------------------
+//pass by value with class 4
+
+// #include<iostream>
+// using namespace std;
+
+// class add
+// {
+//     public:
+//     int c, e, r;
+    
+//     public:
+//     void display(int a, int b)
+//     {
+//         e = a;
+//         r = b;
+//         c = e + r;
+//         cout << "c = " << c << endl;
+//     } 
+// };
+
+// int main()
+// {
+//     add obj;
+    
+//     int x, y;
+    
+//     cout << "Enter the value of x: ";
+//     cin >> x;
+    
+//     cout << "Enter the value of y: ";
+//     cin >> y;
+    
+//     obj.display(x, y);
+
+//     return 0;
+// }
+
+----------------------------------------------------------------------------------------
+//pass by vlue type 4
+
+#include<iostream>
+using namespace std;
+class add
+{
+    public:
+    int c,e,r;
+    
+    public:
+    void display(int a,int b)
+    {
+        e=a;
+        r=b;
+        c=a+b;
+    }
+    void show()
+    {
+        cout<<"C = "<<c<<endl;
+    }
+};
+int main()
+{
+    add obj;
+    int x,y;
+    
+    cout<<"enter th value of x  ";
+    cin>>x;
+        
+    cout<<"enter th value of y  ";
+    cin>>y;
+    
+    obj.display(x, y);
+    obj.show();
+}
+=================================================================================================================
+// #include <iostream>
+// using namespace std;
+// class Addition{
+//     int a;
+//     int b;
+//     public:
+//     Addition(){
+       
+//     }
+//     Addition(int a,int b){
+//         this->a=a;
+//         this->b=b;
+//     }
+//     void display(){
+       
+//         cout<<a<<"and "<<b<<endl;
+//     }
+   
+//     Addition operator+(Addition &p)//copy constructor
+//     {
+//         Addition objenew;
+//         objenew.a=a+p.a;
+//         objenew.b=b+p.b;
+//       cout<<p.a<<endl;
+       
+//         return objenew;
+//     }
+// };
+// int main()
+// {
+//   Addition obj1(2,4);
+//   Addition obj2(40,7);
+//   Addition obj3=obj2+obj1;
+//   obj3.display();
+
+//     return 0;
+// }
+//================================================================
+// #include <iostream>
+// using namespace std;
+
+
+// void add(int a, int b)
+// {
+//   cout << "sum = " << (a + b);
+// }
+
+// void add(double a, double b)
+// {
+//     cout << endl << "sum = " << (a + b);
+// }
+
+// // Driver code
+// int main()
+// {
+//     add(10, 2);
+//     add(5.3, 6.99);
+
+//     return 0;
+// }
+//==============================================================================
+// #include <iostream>  
+// using namespace std;  
+// int main()
+// {  
+//   int n1=0,n2=1,n3,i,number;    
+
+//  cout<<"Enter the number of elements: ";    
+//  cin>>number;    
+
+//  cout<<n1<<" "<<n2<<" ";    
+
+//  for(i=2;i<number;++i)   
+//  {    
+//   n3=n1+n2;    
+//   cout<<n3<<" ";    
+//   n1=n2;    
+//   n2=n3;    
+//  }    
+//   return 0;  
+// }
+//==============================================================================
+// //table by class
+// #include<iostream>
+// using namespace std;
+// class add
+// {
+//     int n;
+//     public:
+//     void display()
+//     {
+//     cout<<"enter the number ";
+//     cin>>n;
+//     for(int i=1;i<=10;i++)
+//     {
+//         cout<<n<<"*"<<i<<"="<<n*i<<endl;
+//     }
+// }
+// };
+// int main()
+// {
+//     add obj;
+//     obj.display();
+// }
+
+//--------------------------------------------------------------------------------
+//table pass value by class
+
+// #include<iostream>
+// using namespace std;
+// class table
+// {
+//     public:
+//     void display(int n)
+    
+//     {
+//         for(int i=1;i<=10;i++)
+//         {
+//             cout<<n<<"*"<<i<<"="<<n*i<<endl;
+//         }
+//     }
+// };
+// int main()
+// {
+//     table obj;
+//     int n;
+    
+//     cout<<"enter the value of a ";
+//     cin>>n;
+    
+//     obj.display(n);
+// }
+//------------------------------------------------------------------------------
+//table pass by value
+// #include<iostream>
+// using namespace std;
+// class table
+// {
+//     public:
+//     int d;
+//     public:
+//     void display(int n)
+//     {
+//         d=n;
+//     }
+//     void show()
+//     {
+//         for(int i=1;i<=10;i++)
+//         {
+//             cout<<d<<"*"<<i<<"="<<d*i<<endl;
+//         }
+//     }
+// };
+// int main()
+// {
+//     table obj;
+//     int n;
+    
+//     cout<<"enter the number ";
+//     cin>>n;
+//     obj.display(n);
+//     obj.show();
+// }
+
+//==============================================================================
+//while loop table pass by value 
+
+// #include<iostream>
+// using namespace std;
+// class table
+// {
+//     public:
+//     int n,i=1;
+    
+//     public:
+//     void display()
+//     {
+//         cout<<"enter the number ";
+//         cin>>n;
+    
+//         while(i<=10)
+//         {
+//             cout<<n<<"*"<<i<<"="<<n*i<<endl;
+//             i++;
+//         }
+//     }
+// };
+// int main()
+// {
+//     table obj;
+//     obj.display();
+// }
+//------------------------------------------------------------------------------
+//2 type
+#include<iostream>
+using namespace std;
+
+class table
+{
+    public:
+    void display(int n)  
+    {
+        for(int i = 1; i <= 10; i++)  
+        {
+            cout << n << " * " << i << " = " << n * i << endl;
+        }
+    }
+};
+
+int main()
+{
+    table obj;
+    int n;
+    cout << "Enter the number: ";  
+    cin >> n;
+    obj.display(n);  
+    return 0;  
+}
+
+---------------------------------------------------------------------------------------------
+//3 type
+//#include<iostream>
+//using namespace std;
+//class table 
+//{
+//	private:
+//	int d,i=1;
+//	public:
+//    void display(int n)
+//    {
+//    	d=n;		
+//   	}
+//   	void show()
+//   	{
+//   		while(i<=10)
+//   		{
+//   			cout<<d<<"*"<<i<<"="<<d*i<<endl;
+//   			i++;
+//		   }
+//	}  
+//};
+//int main()
+//{
+//	table obj;
+//	int n;
+//	
+//	cout<<"enter the number ";
+//	cin>>n;
+//	obj.display(n);
+//	obj.show();
+//}
+//=============================================================================================================================
+//multiple ingeritance
+
+//#include<iostream>
+//using namespace std;
+//class park
+//{
+//	public:
+//	int a,b,c;
+//	void add()
+//	{
+//		cout<<"enter the a number ";
+//		cin>>a;
+//		
+//		cout<<"enter the b number ";
+//		cin>>b;
+//		
+//		c=a+b;
+//		cout<<"add "<<c<<endl;
+//	}
+//};
+//class collage :public park
+//{
+//	public:
+//	int a,b,c;
+//	void sub()
+//	{
+//	    cout<<"enter the a number ";	 
+//		cin>>a;
+//				
+//		cout<<"enter the b number ";
+//		cin>>b;
+//		
+//		c=a-b;
+//		
+//		cout<<"sub "<<c<<endl;
+//	}
+//};
+//class school:public collage
+//{
+//	public:
+//	int a,b,c;
+//	void mul()
+//	{
+//		cout<<"enter the a number ";
+//		cin>>a;
+//		
+//		cout<<"enter the b number ";
+//		cin>>b;
+//		
+//		c=a*b;
+//		
+//		cout<<"mul "<<c<<endl;
+//	}
+//};
+//class pub:public school
+//{
+//	public:
+//	int a,b,c;
+//	void div()
+//	{
+//		cout<<"enter the a number ";
+//		cin>>a;
+//		
+//		cout<<"enter the b number ";
+//		cin>>b;
+//		
+//		c=a/b;
+//		cout<<"div "<<c<<endl;
+//	}
+//};
+//class coman:public pub
+//{
+//	public:
+//	int a,b,c;
+//	void mix()
+//	{
+//		cout<<"enter the a number ";
+//		cin>>a;
+//		
+//		cout<<"enter the b number ";
+//		cin>>b;
+//		cout<<"add = "<<a+b<<endl;
+//		cout<<"sub = "<<a-b<<endl;
+//		cout<<"mul = "<<a*b<<endl;
+//		cout<<"div = "<<a/b<<endl;
+//	}
+//};
+//int main()
+//{
+//	coman obj;
+//	obj.add();
+//	obj.sub();
+//	obj.mul();
+//	obj.div();
+//	obj.mix();
+//}
+
